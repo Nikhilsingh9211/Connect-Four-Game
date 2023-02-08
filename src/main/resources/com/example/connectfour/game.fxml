@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #d9f7f0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.connectfour.HelloController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="299.0" minWidth="220.0" prefWidth="220.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2b3b4c;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="45.0" prefWidth="304.0" text="Player One" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="302.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+    </children>
+</GridPane>
